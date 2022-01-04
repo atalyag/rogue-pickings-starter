@@ -111,17 +111,26 @@ header nav ul li a{
 .section-three {
 	width: 100%;
 	border-top: 1px solid #eee;
+	overflow: auto;
+	display: inline-block;
+	height: 235px
 }
 
 .section-one h3 {
-	padding: 10px 0;
+	padding: 5px;
+	margin: auto;
+}
+
+.section-one, .section-two {
+	border-right: 1px solid #eee;
 }
 
 
 
 .section-two h3,
 .section-three h3 {
-	padding: 10px 30px;
+	padding: 5px;
+	margin: 10px;
 }
 
 .menu {
@@ -184,8 +193,7 @@ footer span {
 		display: inline-flex;
 		justify-content: center;
 		align-items: center;
-		flex-basis: auto;
-		text-align: center;
+		text-align: left;
 	}
 }
 
@@ -200,9 +208,5 @@ footer span {
         width: 100%;
         padding: 10px;
         border-bottom: 1000px;
-	}
-
-	header nav ul {
-		display: inline-flex;
 	}
 }
