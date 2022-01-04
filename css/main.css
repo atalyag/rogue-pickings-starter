@@ -49,6 +49,8 @@ p {
 /*The widths are in a percentage!*/
 header {
 	border-bottom: 3px solid #77a466;
+	width: 100%;
+	text-align: center;
 }
 
 header h1 {
@@ -68,10 +70,10 @@ header nav ul {
 }
 header nav ul li {
 	text-transform: uppercase;
+	list-style-type: none;
 	font-weight: 700;
 	font-size: 14px;
 	padding: 0 10px;
-	display: inline;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -115,10 +117,7 @@ header nav ul li a{
 	padding: 10px 0;
 }
 
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
+
 
 .section-two h3,
 .section-three h3 {
@@ -167,12 +166,28 @@ footer span {
 	.section-one, .section-two, .section-three{
 		flex: 1 100%;
 	}
+
+	.bottom-section{
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		flex-basis: auto;
+		text-align: center;
+	}
 }
 
 /***tablet***/
-@media only screen and (min-width: 767px){
+@media only screen and (min-width: 768px){
 	.section-one, .section-two, .section-three{
 		flex: 1 33%;
+	}
+
+	.bottom-section{
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		flex-basis: auto;
+		text-align: center;
 	}
 }
 
@@ -181,5 +196,15 @@ footer span {
 @media only screen and (min-width: 1200px){
 	.section-one, .section-two, .section-three{
 		flex: 1 33%;
+	}
+
+    header h1 {
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1000px;
+	}
+
+	header nav ul {
+		display: inline-flex;
 	}
 }
